@@ -5,34 +5,68 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width = device - width; initial-scale = 1.0" />
 	<title>HTML5 강재민 포트폴리오 홈페이지</title>
-	<link rel="stylesheet" href="mportpolio.css" />
-	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-
+	<link rel="stylesheet" href="mportpolio.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
-	<nav class="nav-extended">
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">KangJaeMin</a>
+	<div data-role = "page" id = "page_study">
+		
+		<div data-role="header">
+			<h1>강재민 홈페이지</h1>
+			<div data-role="navbar">
+				<ul>
+				  <li><a href="mintro.html" rel = "external">소개</a></li>
+				  <li><a href="mstudy.html" rel = "external">학술</a></li>
+				  <li><a href="minfo.html" rel = "external">인적</a></li>
+				  <li><a href="mcareer.html" rel = "external">경력</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="nav-content">
-			<ul class="tabs tabs-transparent">
-				<li class="tab"><a href="mcareer.html">경력</a></li>
-				<li class="tab"><a href="mstudy.html">학술</a></li>
-				<li class="tab"><a href="minfo.html">인적</a></li>
-				<li class="tab"><a href="mintro.html">소개</a></li>
-			</ul>
+		
+		<div data-role="content">
+			<section class="section1">
+				<h3>인적사항</h3>
+				<ul data-role = "listview" data-inset = "true">
+					<li>성   명 : 강재민</li>
+					<li>생년월일 : 1997.10.09</li>
+					<li>주   소 : 경북 경산시 원효로 42길 12 사동알프스 502호</li>
+					<li>연 락 처 : 010 - 6620 - 0551</li>
+					<li>학   력
+						<table data-role = "table" class = "ui-responsive">
+							<thead>
+								<tr>
+									<th>졸업년도</th>
+									<th>출신학교</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>2010. 02</td><td>포항대흥초등학교 졸업</td></tr>
+								<tr><td>2013. 02</td><td>대흥중학교 졸업</td></tr>
+								<tr><td>2016. 02</td><td>포항대동고등학교 졸업</td></tr>
+								<tr><td>2016~ </td><td>대구한의대학교 스마트IT전공 재학중</td></tr>
+							</tbody>
+						</table>
+					</li>
+				</ul>
+			</section>
+			<aside>
+				<h3>참조링크</h3>
+				<a href="https://github.com/kangjaemingit/">
+					<img class = "portal" src = "github.png" width="120" height="80" alt = " Github 이동" />
+				</a>
+	
+				<a href="https://www.google.com">
+					<img class = "portal" src = "google.jpg" width = "80" height="80" alt = "구글이동"/>
+				</a>
+			</aside>
 		</div>
-	</nav>
-
-    <div>
-       minfo
-    </div>
-
-
-
+	
+		<div data-role = "footer">
+			<h2>Copyright &copy; 2021 Kang, JaeMin</h2>
+		</div>
+	</div>
 </body>
-
 </html>

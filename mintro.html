@@ -5,47 +5,56 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width = device - width; initial-scale = 1.0" />
 	<title>HTML5 강재민 포트폴리오 홈페이지</title>
-	<link rel="stylesheet" href="mportpolio.css" />
-	<!-- 머티리얼CSS 디자인 -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-
+	<link rel="stylesheet" href="mportpolio.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body>
-	<nav class="nav-extended">
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">KangJaeMin</a>
+	<div data-role = "page" id = "page_intro">
+		<div data-role="header">
+			<h1>강재민 홈페이지</h1>
+			<div data-role="navbar">
+				<ul>
+				  <li><a href="#page_intro" rel = "external">소개</a></li>
+				  <li><a href="mstudy.html" rel = "external">학술</a></li>
+				  <li><a href="minfo.html" rel = "external">인적</a></li>
+				  <li><a href="mcareer.html" rel = "external">경력</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="nav-content">
-			<ul class="tabs tabs-transparent">
-				<li class="tab"><a href="mcareer.html">경력</a></li>
-				<li class="tab"><a href="mstudy.html">학술</a></li>
-				<li class="tab"><a href="minfo.html">인적</a></li>
-				<li class="tab"><a href="mintro.html">소개</a></li>
-			</ul>
+
+		<div data-role="content">	
+			<section class="section1">
+				<h3>자기소개</h3>
+				<img id="stu_pic" src="my_photo.jpg"/>
+				<p>
+					저는 대구한의대학교 스마트IT전공에 재학중이고, 소프트웨어의 다양한 분야에 대해 관심을 갖고 있는 강재민입니다.
+					C언어, java, python 등 다양한 언어를 공부중에있고, 안드로이드 앱 개발에 관심을 가지고 프로젝트를 진행한 적이 있으며,
+					현재는 React, React-Native를 이용한 웹앱, 하이브리드 앱에대해 공부하며 개발을 진행하고 있습니다.
+				</p>
+			</section>
+			<aside>
+				<h3>참조링크</h3>
+				<a href="https://github.com/kangjaemingit/">
+					<img class = "portal" src = "github.png" width="120" height="80" alt = " Github 이동" />
+				</a>
+	
+				<a href="https://www.google.com">
+					<img class = "portal" src = "google.jpg" width = "80" height="80" alt = "구글이동"/>
+				</a>
+			</aside>
 		</div>
-	</nav>
 
-
-	<div class="introduce">
-		<section class="section1">
-			<h3>자기소개</h3>
-			<img id="stu_pic" src="my_photo.jpg" />
-			<p>
-				저는 대구한의대학교 스마트IT전공에 재학중이고, 소프트웨어의 다양한 분야에 대해 관심을 갖고 있는 강재민입니다.
-				C언어, java, python 등 다양한 언어를 공부중에있고, 안드로이드 앱 개발에 관심을 가지고 프로젝트를 진행한 적이 있으며,
-				현재는 React, React-Native를 이용한 웹앱, 하이브리드 앱에대해 공부하며 개발을 진행하고 있습니다.
-			</p>
-		</section>
-		<section>
-			<h3>참조링크</h3>
-			<a href="https://github.com/kangjaemingit/"><img class="portal" src="github.png" width="200" alt="Github 이동" /></a>
-		</section>
+		<div data-role = "footer">
+			<h2>Copyright &copy; 2021 Kang, JaeMin</h2>
+		</div>
 	</div>
 
+	
+	
 
 
 </body>
-
 </html>
